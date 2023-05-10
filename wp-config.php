@@ -21,16 +21,16 @@
 // ** Configurações do MySQL - Você pode pegar estas informações
 // com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'tema_padrao');
+define('DB_NAME', 'alpina_digital');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'finer');
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '#finer#');
+define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
-define('DB_HOST', '192.168.10.254');
+define('DB_HOST', 'localhost');
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8mb4');

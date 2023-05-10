@@ -1,0 +1,156 @@
+footer{
+    position: relative;
+    background-color: $secondarycolor;
+    padding: 60px 0;
+    color: #fff;
+    .top-footer{
+        padding-bottom: 55px;
+        border-bottom: 1px solid rgba($color: #FFF, $alpha: 0.2);
+        .logo{
+            display: flex;
+        }
+        .midias{
+            ul{
+                margin: auto;
+                text-align: right;
+                padding: 5px 0;
+                li{
+                    display: inline-flex;
+                    margin-left: 48px;
+                    a{
+                        display: flex;
+                        font-size: 24px;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        border: none;
+                        transition: all ease .3s;
+                        i{
+                            font-family: "Font Awesome 5 Brands";
+                            font-weight: 500;
+                        }
+                        &:hover{
+                            color: $primaryfontcolor;
+                        }
+                    }
+                    &:nth-child(1){
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .itens-footer{
+        padding-top: 70px;
+        padding-bottom: 85px;
+        border-bottom: 1px solid rgba($color: #FFF, $alpha: 0.2);
+        .atendimento{
+            h5{
+                margin-bottom: 24px;
+            }
+            li{
+                margin-bottom: 16px;
+            }
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                margin-bottom: 24px;
+                a{
+                    font-size: 18px;
+                    line-height: 27px;
+                    letter-spacing: -2%;
+                    font-weight: 400;
+                    color: $primaryfontcolor;
+                    border-bottom: 1px solid transparent;
+                    transition: all ease .3s;
+                    i{
+                        width: 30px;
+                    }
+                    &:hover{
+                        color: $primaryfontcolor;
+                        border-color: $primaryfontcolor;
+                    }
+                }
+                &:nth-last-child(1){
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .newsletter{
+            font-weight: 400;
+            color: $primaryfontcolor;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: -2%;
+            h5{
+                color: #FFF;
+            }
+            input{
+                margin: 24px 0;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+    .bottom-footer{
+        padding-top: 60px;
+        color: $primaryfontcolor;
+        font-weight: 400;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+        .links{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            a{
+                color: $primaryfontcolor;
+                border-bottom: 1px solid transparent;
+                transition: all ease .3s;
+                &:nth-child(1){
+                    margin-right: 48px;
+                }
+                &:hover{
+                    border-color: $primaryfontcolor;
+                }
+            }
+        }
+    }
+    @media (max-width: $md){
+        .atendimento, .newsletter{
+            margin-top: 45px;
+        }
+        .bottom-footer{
+            .links{
+                a{
+                    margin-right: 24px !important;
+                }
+            }
+        }
+    }
+    @media (max-width: $sm){
+        padding: 60px 9px;
+        .top-footer{
+            .logo, .midias{
+                display: flex;
+                justify-content: center;
+            }
+            .midias{
+                margin-top: 40px;
+            }
+        }
+        .bottom-footer{
+            .links{
+                justify-content: flex-start;
+                margin-top: 30px;
+            }
+        }
+    }
+}

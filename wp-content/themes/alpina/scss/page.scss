@@ -1,0 +1,30 @@
+.wrapper{
+	color: white;
+	padding: 30px 0;
+	margin-bottom: 20px;
+}
+
+.page{
+	padding: 60px 0;
+	.navigation{
+		display: flex;
+		flex: 1;
+		.tw-pagination{
+			padding: 0;
+			display: flex;
+			flex: 1;
+			a{
+				display: initial !important;
+			}
+			margin-bottom: 40px;
+		}
+	}
+	&#page-contato{
+		#contato{
+			margin-bottom: 0;
+		}
+		h2{
+			text-align: left;
+		}
+	}
+}

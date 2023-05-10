@@ -1,0 +1,195 @@
+/* 
+Theme Name: Site
+Description: Tema
+Version: 2.0
+Author: Web
+Website: www.site.com.br
+Responsible: Site
+*/
+//----------------//
+// DEPENDENCIAS   //
+//----------------//
+@import 'bower_components/font-awesome/css/fontawesome.min.css';
+@import 'bower_components/font-awesome/css/all.min.css';
+@import 'bower_components/bootstrap/dist/css/bootstrap.min.css';
+@import 'bower_components/slick-carousel/slick/slick.scss';
+@import 'bower_components/slick-carousel/slick/slick-theme.scss';
+@import 'scss/mixins.scss';
+
+//-------------------//
+// Partes            //
+//-------------------//
+@import 'scss/variables';
+@import 'scss/fonts';
+@import 'scss/components';
+@import 'scss/header';
+@import 'scss/index';
+@import 'scss/page';
+@import 'scss/single';
+@import 'scss/footer';
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $fonte1 !important;
+    font-size: 1.1rem;  
+    font-weight: 300;
+    line-height: 2;
+    color: $primaryfontcolor;
+    background-color: #000;
+    &.is-menu-active{
+        overflow: hidden;
+    }
+    .body-wrapper{
+        overflow-x: hidden;
+    }
+    a{
+        text-decoration: none;
+        &:focus,
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    h2{
+        color: #FFF;
+        font-size: 56px;
+        line-height: 50.4px;
+        letter-spacing: -3%;
+        font-weight: 300;
+        text-transform: uppercase;
+        strong{
+            font-weight: 900;
+        }
+    }
+    .img-responsive{
+    	width: auto;
+        margin: auto;
+    	height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .hidden-xs{
+        @media(max-width: $sm){
+            display: none !important;
+        }
+    }
+    *{
+        outline: none !important;
+        &:focus{
+            outline: none !important;
+        }
+    }
+    .slick-arrow{
+        font-weight: 600;
+        z-index: 2;
+        &:before {
+            color: #FFF;
+            font-family: "Font Awesome 5 Free";
+            font-size: 25px;
+            opacity: 1;
+        }
+        &.slick-prev{
+            left: 20%;
+            top: 95%;
+            &:before {
+                content: "\f060";
+            }
+        }
+        &.slick-next{
+            left: 23%;
+            top: 95%;
+            &:before {
+                content: "\f061";
+            }
+        }
+        @media (max-width: $xg){
+            &.slick-prev{
+                left: 7%;
+            }
+            &.slick-next{
+                left: 11%;
+            }
+        }
+        @media (max-width: $lg){
+            &.slick-prev, &.slick-next{
+                top: 93%;
+            }
+            &.slick-prev{
+                left: 8%;
+            }
+            &.slick-next{
+                left: 12%;
+            }
+        }
+        @media (max-width: $sm){
+            &.slick-prev, &.slick-next{
+                top: 100%;
+            }
+            &.slick-prev{
+                left: 15%;
+            }
+            &.slick-next{
+                left: 30%;
+            }
+        }
+    }
+    .slick-slide{
+        height: auto;
+    }
+    .slick-dots{
+        text-align: right;
+        bottom: 25px;
+        right: 65px;
+        .slick-active, li{
+            button{
+                &:before{
+                    content: "";
+                    color: #FFF;
+                    background-color: #fff;
+                    width: 16px;
+                    height: 16px;
+                    transition: all ease .3s;
+                }
+            }
+        }
+        .slick-active{
+            button{
+                &:before{
+                    opacity: 1;
+                }
+            }
+        }
+        @media (max-width: $sm){
+            bottom: -20px;
+        }
+    }
+    img{
+        &.alignright{
+            float: right;
+            margin: 0 0 1em 1em;
+        }
+        &.alignleft{
+            float: left;
+            margin: 0 1em 1em 0;
+        }
+        &.aligncenter{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .alignright{
+        float: right;
+    }
+    .alignleft{
+        float: left;
+    }
+    .aligncenter{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figure{
+        margin-bottom: 0;
+    }
+}

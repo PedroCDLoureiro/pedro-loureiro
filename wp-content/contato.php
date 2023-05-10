@@ -55,10 +55,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $mail->isSMTP();
     $mail->isHTML(true);
     $mail->CharSet  = 'UTF-8';
-    $mail->Host     = 'mail.finer.com.br';
+    $mail->Host     = 'mail.site.com.br';
     $mail->SMTPAuth = true;
-    $mail->Username = 'site@finer.com.br';
-    $mail->Password = '#finer#';
+    $mail->Username = 'site@site.com.br';
+    $mail->Password = '#site#';
     $mail->Port     = 587;
     $mail->setFrom($_POST['email']['value'], $_POST['nome']['value']);
     $mail->addAddress($_POST['para']['value'], '');

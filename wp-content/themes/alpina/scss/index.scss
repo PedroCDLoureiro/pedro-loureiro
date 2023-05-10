@@ -1,0 +1,472 @@
+section{
+	&#banner{
+	    position: relative;
+		overflow: hidden;
+		background: #000;
+		color: $primaryfontcolor;
+		b, strong{
+			color: #fff;
+		}
+		.wrapper-slider{
+			padding-top: 0;
+			.container-banner{
+				height: 100%;
+				.row-banner{
+					height: 100%;
+				}
+			}
+			.slick-slide{
+				position: relative;
+				height: 775px;
+				.content-slider{
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					.titulo{
+						font-size: 64px;
+						text-transform: uppercase;
+						letter-spacing: -0.03em;
+						line-height: 58px;
+						b, strong{
+							font-weight: 900;
+						}
+					}
+					.subtitulo{
+						font-size: 18px;
+						line-height: 27px;
+						color: $primaryfontcolor;
+						b, strong{
+							color: #fff;
+							font-weight: 700;
+						}
+					}
+					.botao{
+						font-size: 24px;
+						a{
+							display: flex;
+							color: #fff;
+							img{
+								margin-left: 41px;
+								transition: all ease .3s;
+							}
+							&:hover{
+								img{
+									transform: translate(5px, -5px);
+								}
+							}
+						}
+					}
+				}
+				.div-imagem{
+					display: none;
+					margin-top: 30px;
+				}
+				.img-slider{
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: 100%;
+					img{
+						height: 100%;
+					}
+				}
+			}
+		}
+		@media (max-width: $xg){
+			.slick-slide{
+				height: 650px !important;
+				.content-slider{
+					.titulo{
+						font-size: 56px !important;
+					}
+				}
+			}
+		}
+		@media (max-width: $lg){
+			.slick-slide{
+				height: 550px !important;
+				.content-slider{
+					.titulo{
+						font-size: 40px !important;
+					}
+					.subtitulo{
+						font-size: 16px;
+					}
+					a{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		@media (max-width: $sm){
+			.div-imagem{
+				display: block !important;
+			}
+			.img-slider{
+				display: none !important;
+			}
+			.slick-slide{
+				height: max-content !important;
+			}
+		}
+	}
+	&#solucoes{
+		padding:240px 0;
+		h2{
+			font-weight: 900;
+		}
+		h3{
+			font-size: 18px;
+			text-align: center;
+			font-weight: 400;
+			b{
+				color: #FFF;
+				font-weight: 700;
+			}
+		}
+		.solicitar-proposta{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+		.botao, .botao-mobile{
+			font-size: 24px;
+			a{
+				color: #fff;
+				img{
+					margin-left: 41px;
+					transition: all ease .3s;
+				}
+				&:hover{
+					img{
+						transform: translate(5px, -5px);
+					}
+				}
+			}
+		}
+		.botao-mobile{
+			display: none;
+		}
+		.row-cards{
+			margin-top: 75px;
+			.card-solucao{
+				.conteudo{
+					background-color: $secondarycolor;
+					color: #FFF;
+					font-size: 18px;
+					font-weight: 400;
+					padding: 50px 40px;
+					position: relative;
+					transition: all ease .3s;
+					h2{
+						font-size: 32px;
+						font-weight: 900;
+						line-height: 29px;
+						margin-top: 24px;
+						margin-bottom: 75px;
+					}
+					img{
+						filter: invert(1);
+						transition: all ease .3s;
+					}
+					.botao{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						top: 0;
+						right: 0;
+						background-color: $secondarycolor;
+						width: 74px;
+						height: 74px;
+						opacity: 0;
+						z-index: -1;
+					}
+					&:hover{
+						background-color: #fff;
+						color: $secondarycolor;
+						h2{
+							color: $secondarycolor;
+						}
+						img{
+							filter: invert(0);
+						}
+						.botao{
+							opacity: 1;
+							z-index: 1;
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: $xg){
+			padding: 100px 0;
+			h3{
+				text-align: left;
+			}
+		}
+		@media (max-width: $md){
+			padding: 40px 0;
+			h2{
+				font-size: 24px !important;
+				line-height: 90% !important;
+			}
+			h3{
+				font-size: 12px !important;
+			}
+			.row-cards{
+				margin-top: 30px;
+			}
+			.titulo{
+				margin-bottom: 0px;
+			}
+			p{
+				margin-top: 20px;
+			}
+			.botao{
+				display: none;
+			}
+			.botao-mobile{
+				display: block !important;
+			}
+			.card-solucao{
+				margin-bottom: 15px;
+			}
+		}
+		@media (max-width: $sm){
+			h2{
+				margin-top: 75px !important;
+			}
+			.botao{
+				opacity: 1 !important;
+				z-index: 1 !important;
+				top: 70% !important;
+				img{
+					filter: invert(0) !important;
+				}
+			}
+		}
+	}
+	&#alpinistas{
+		padding-bottom: 180px;
+		.div-imagem{
+			.selo{
+				position: absolute;
+				bottom: 21%;
+				left: -9%;
+				img{
+					transition: all ease .3s;
+				}
+			}
+			&:hover{
+				.selo{
+					img{
+						transform: rotate(-20deg);
+					}
+				}
+			}
+		}
+		.conteudo{
+			line-height: 27px;
+			font-weight: 400;
+			strong{
+				color: #fff;
+			}
+		}
+		.principal{
+			padding-bottom: 70px;
+			.div-conteudo-principal{
+				display: flex;
+				flex-wrap: wrap;
+				.titulo-principal{
+					position: absolute;
+					left: -25%;
+					background: #000;
+					padding: 32px 56px;
+					p{
+						color: #FFF;
+						font-weight: 300;
+						text-transform: uppercase;
+						font-size: 56px;
+						strong{
+							font-weight: 900;
+						}
+					}
+				}
+				.conteudo{
+					display: flex;
+					align-items: flex-end;
+					padding-bottom: 15%;
+				}
+			}
+		}
+		.secundario{
+			.div-conteudo-secundario{
+				display: flex;
+				flex-wrap: wrap;
+				align-content: space-evenly;
+				.titulo-secundario{
+					p{
+						font-size: 56px;
+						font-weight: 900;
+						color: #FFF;
+						text-transform: uppercase;
+					}
+				}
+			}
+			.div-imagem{
+				img{
+					filter: contrast(0.9);
+					transition: all ease .3s;
+				}
+				&:hover{
+					img{
+						filter: contrast(1.1);
+					}
+				}
+			}
+		}
+		@media (max-width: $md){
+			.principal{
+				.titulo-principal{
+					padding: 12px 36px !important;
+					p{
+						font-size: 24px !important;
+					}
+				}
+			}
+
+		}
+		@media (max-width: $sm){
+			padding-bottom: 80px;
+			.div-imagem{
+				padding: 0 30px;
+			}
+			.div-conteudo-principal, .div-conteudo-secundario{
+				padding: 0 45px;
+			}
+			.selo{
+				bottom: 50% !important;
+				left: 0 !important;
+				img{
+					width: 88px !important;
+				}
+			}
+			.conteudo{
+				p{
+					font-size: 12px !important;
+					line-height: 18px !important;
+				}
+			}
+			.principal{
+				padding-bottom: 0 !important;
+				.titulo-principal{
+					padding: 24px 32px!important;
+					left: 0% !important;
+					top: -70px !important;
+					p{
+						font-weight: 900 !important;
+					}
+				}
+				.conteudo{
+					padding-top: 70px !important;
+				}
+			}
+			.secundario{
+				flex-direction: column-reverse !important;
+				.div-imagem{
+					margin-bottom: 30px;
+				}
+				p{
+					font-size: 24px !important;
+				}
+				.conteudo{
+					p{
+						font-size: 12px !important;
+						line-height: 18px !important;
+					}
+				}
+				.botao{
+					display: none;
+				}
+			}
+		}
+	}
+	&#clientes{
+		background-color: #fff;
+		.texto{
+			padding-top: 94px;
+			text-align: center;
+			color: #000;
+			font-weight: 400;
+			strong{
+				font-weight: 700;
+			}
+		}
+		.slider-clientes{
+			padding: 60px 0px 90px 0px;
+			margin-bottom: 245px;
+			.slick-track{
+				display: flex;
+    			align-items: center;
+				.item{
+					display: flex;
+    				justify-content: center;
+				}
+			}
+		}
+		@media (max-width: $sm){
+			.slider-clientes{
+				margin-bottom: 88px;
+			}
+		}
+	}
+	&#contato{
+		background-image: url('image/bg-contato.png');
+		background-position: right;
+		background-repeat: no-repeat;
+		margin-bottom: 286px;
+		form{
+			margin:50px 0;
+		}
+		input, textarea{
+			margin: 15px 0 30px 0;
+		}
+		label{
+			color: #FFF;
+		}
+		input[type="file"]{
+			display: none;
+		}
+		.file-button{
+			display: flex;
+    		align-items: center;
+			img{
+				margin-left: 10px;
+				transition: all ease .3s;
+			}
+			&:hover{
+				img{
+					filter: invert(1);
+					transform: translate(5px, -5px);
+				}
+			}
+		}
+		.submit-button{
+			width: 100%;
+		}
+		@media (max-width: $md){
+			background: none;
+		}
+		@media (max-width: $sm){
+			margin-bottom: 88px !important;
+			.div-contato{
+				padding: 0 30px !important;
+			}
+			h2{
+				font-size: 24px !important;
+				line-height: 90% !important;
+			}
+		}
+	}
+}
